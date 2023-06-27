@@ -1,0 +1,155 @@
+body{
+    width: 100%;
+  }
+    @keyframes sliding {
+       0%{
+          left: 0px;
+          background-color: #f43f5e;
+       }
+       25%{
+        left: 600px;
+        background-color: #e11d48;
+       }
+       50%{
+        left: 0px;
+        background-color: #be123c;
+       }
+       75%{
+          left: 600px;
+          background-color: #9f1239;
+       }
+       100%{
+           left: 0px;
+           background-color: #881337;
+       }
+   }
+    @keyframes color {
+       0%{
+          left: -0px;
+          background-color: #0ea5e9;
+       }
+       25%{
+        left: -600px;
+        background-color: #0284c7;
+       }
+       50%{
+        left: -0px;
+        background-color: #0369a1;
+       }
+       75%{
+          left: -600px;
+          background-color: #075985;
+       }
+       100%{
+           left: -0px;
+           background-color: #0c4a6e;
+       }
+   }
+   .bg-rose-500{
+       position: relative;
+       animation: sliding 5s ease-in-out  infinite alternate ;
+       animation-play-state: running;
+   }
+   .bg-sky-500{
+       position: relative;
+       animation: color 5s ease-in-out  infinite alternate ;
+       animation-play-state: running;
+   }
+   @media screen  and (max-width:576px) {
+    body{
+      width: 100%;
+    }
+    @keyframes sliding {
+       0%{
+          left: 0px;
+          background-color: #f43f5e;
+       }
+       25%{
+        left: 150px;
+        background-color: #e11d48;
+       }
+       50%{
+        left: 0px;
+        background-color: #be123c;
+       }
+       75%{
+          left: 150px;
+          background-color: #9f1239;
+       }
+       100%{
+           left: 0px;
+           background-color: #881337;
+       }
+   }
+    @keyframes color {
+       0%{
+          left: -0px;
+          background-color: #0ea5e9;
+       }
+       25%{
+        left: -150px;
+        background-color: #0284c7;
+       }
+       50%{
+        left: -0px;
+        background-color: #0369a1;
+       }
+       75%{
+          left: -150px;
+          background-color: #075985;
+       }
+       100%{
+           left: -0px;
+           background-color: #0c4a6e;
+       }
+   }
+   }
+   @media  only screen and (min-width:576px) and (max-width:768px) {
+    body{
+        width: 75%;
+      }
+      @keyframes sliding {
+         0%{
+            left: 0px;
+            background-color: #f43f5e;
+         }
+         25%{
+          left: 150px;
+          background-color: #e11d48;
+         }
+         50%{
+          left: 0px;
+          background-color: #be123c;
+         }
+         75%{
+            left: 150px;
+            background-color: #9f1239;
+         }
+         100%{
+             left: 0px;
+             background-color: #881337;
+         }
+     }
+      @keyframes color {
+         0%{
+            left: -0px;
+            background-color: #0ea5e9;
+         }
+         25%{
+          left: -150px;
+          background-color: #0284c7;
+         }
+         50%{
+          left: -0px;
+          background-color: #0369a1;
+         }
+         75%{
+            left: -150px;
+            background-color: #075985;
+         }
+         100%{
+             left: -0px;
+             background-color: #0c4a6e;
+         }
+     }
+   }
