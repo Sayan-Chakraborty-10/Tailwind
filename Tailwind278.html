@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/Favicon.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
+    <title>Tailwind278</title>
+</head>
+<body>
+    <div class="static">
+        <p>Static parent</p>
+        <div class="absolute ">
+          <p>Absolute child</p>
+        </div>
+      </div>
+      <div class="relative mt-32">
+        <p>Relative parent</p>
+        <div class="absolute ">
+          <p>Absolute child</p>
+        </div>
+      </div>
+      <div class="static mt-32">
+        <!-- Static parent -->
+        <div class="static"><p>Static child</p></div>
+        <div class="inline-block"><p>Static sibling</p></div>
+        <!-- Static parent -->
+        <div class="absolute"><p>Absolute child</p></div>
+        <div class="inline-block"><p>Static sibling</p></div>
+      </div>
+      <div class="relative">
+        <div class="fixed top-0 left-0 right-0">Contacts</div>
+        <div>
+          <div>
+            <img src="images/unnamed.png" />
+            <strong>Andrew Alfred</strong>
+          </div>
+          <div>
+            <img src="images/unnamed.png" />
+            <strong>Debra Houston</strong>
+          </div>
+          <!-- ... -->
+        </div>
+      </div>
+      <div>
+        <div>
+          <div class="sticky top-0">A</div>
+          <div>
+            <div>
+              <img src="images/unnamed.png" />
+              <strong>Andrew Alfred</strong>
+            </div>
+            <div>
+              <img src="images/unnamed.png" />
+              <strong>Aisha Houston</strong>
+            </div>
+            <!-- ... -->
+          </div>
+        </div>
+        <div>
+          <div class="sticky top-0">B</div>
+          <div>
+            <div>
+              <img src="images/unnamed.png" />
+              <strong>Bob Alfred</strong>
+            </div>
+            <!-- ... -->
+          </div>
+        </div>
+        <!-- ... -->
+      </div>
+      
+</body>
+</html>
